@@ -68,22 +68,3 @@ cp opencode.json ~/.config/opencode/opencode.json
 cp -r skills/* ~/.agents/skills/
 # (o solo algunas: cp -r skills/tdd skills/security-and-hardening ~/.agents/skills/)
 ```
-
-## Lo que NO se sube (y por qué)
-
-* `service.json` — credencial local de OpenCode Desktop (`OPENCODE_SERVER_PASSWORD`, basic auth user `opencode` para `opencode serve` en `127.0.0.1`). Si se expone, borrar y reiniciar OpenCode Desktop para regenerar.
-* `node_modules/`, `package-lock.json`, `bun.lock`, `package.json` — dependencias locales, no aportan nada al repo.
-* `.env*` — variables de entorno, posible fuente de secretos.
-
-Ver `.gitignore`.
-
-## Auditoría de secretos
-
-Antes de cada push se verifica:
-
-```powershell
-# Buscar secretos reales en lo que se sube (debe dar 0 o solo ejemplos genéricos)
-Select-String -Recurse -Path skills,opencode.json -Pattern 'sk-[A-Za-z0-9]|ghp_|xoxb|AKIA|password\s*[:=]\s*[''"][^''"]+[''"]' | Select-Object Path,LineNumber,Line
-```
-
-Estado actual: **limpio**. Los matches de `password|secret|token|api_key` en los skills son solo documentación genérica y ejemplos. El único email es `test@gmail.com` de ejemplo en `buenas-practicas-playwright`.
