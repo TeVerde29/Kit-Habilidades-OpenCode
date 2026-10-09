@@ -1,0 +1,14 @@
+# Credencial local de OpenCode Desktop (basic auth para `opencode serve`) — NO subir
+service.json
+
+# Dependencias Node si se prueban los MCP locales
+node_modules/
+package-lock.json
+bun.lock
+
+# Variables de entorno
+.env*
+
+# Bytecode Python / cachés
+__pycache__/
+*.pyc
