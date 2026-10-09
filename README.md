@@ -16,31 +16,31 @@ kit-habilidades-opencode/
 
 | Skill | Qué hace |
 |---|---|
-| `angular-developer` | Código Angular y guía de arquitectura: señales, formularios, DI, routing, SSR, ARIA, testing, CLI |
-| `apple-design` | Diseño estilo Apple para web: motion físico, springs, sheets, materiales translúcidos, tipografía |
-| `architecture-blueprint-generator` | Genera blueprints de arquitectura: detecta stack, patrones, diagramas C4/UML, ADRs |
-| `audit-website` | Audita un sitio con `squirrelscan` (SEO, performance, seguridad, a11y, 260+ reglas) y corrige en bucle |
-| `caveman-commit` | Commit rápido del día: mensaje terso en español + frenos mínimos |
-| `caveman-deploy` | Despliegue amplio: hooks pre-commit, validación, commit en español con contexto y push |
-| `caveman-qa` | Planes de prueba pragmáticos para pymes: alcance, casos con evidencia, incidencias y veredicto |
-| `codebase-design` | Vocabulario de diseño de módulos profundos: interfaces pequeñas, seams limpios, testabilidad |
-| `convert-documents-to-markdown` | Convierte Word, PowerPoint, Excel, PDF, EPUB, CSV a Markdown con `anydoc` |
-| `diagnosing-bugs` | Diagnóstico de bugs difíciles y regresiones de rendimiento, con redacción de secretos |
-| `find-skills` | Descubre e instala skills del ecosistema abierto de agentes |
-| `frontend-design` | Dirección de diseño distintiva: paleta, tipografía y layout con punto de vista propio |
+| `analisis-repo-y-plan` | Intake Rigor: mapa rápido del repo y plan mínimo de reproducción (inference/eval/train) |
+| `auditoria-sitio-web` | Audita un sitio con `squirrelscan` (SEO, performance, seguridad, a11y, 260+ reglas) y corrige en bucle |
+| `buenas-practicas-playwright` | Playwright E2E/componentes/API/visual/a11y: POM, flaky tests, auth, CI/CD, mocks |
+| `buscar-habilidades` | Descubre e instala skills del ecosistema abierto de agentes |
+| `commit-rapido` | Commit rápido del día: mensaje terso en español + frenos mínimos |
+| `convertir-documentos-markdown` | Convierte Word, PowerPoint, Excel, PDF, EPUB, CSV a Markdown con `anydoc` |
+| `desarrollador-angular` | Código Angular y guía de arquitectura: señales, formularios, DI, routing, SSR, ARIA, testing, CLI |
+| `despliegue-seguro` | Despliegue amplio: hooks pre-commit, validación, commit en español con contexto y push |
+| `diagnosticar-errores` | Diagnóstico de bugs difíciles y regresiones de rendimiento, con redacción de secretos |
+| `diseno-apple` | Diseño estilo Apple para web: motion físico, springs, sheets, materiales translúcidos, tipografía |
+| `diseno-frontend` | Dirección de diseño distintiva: paleta, tipografía y layout con punto de vista propio |
+| `diseno-modulos` | Vocabulario de diseño de módulos profundos: interfaces pequeñas, seams limpios, testabilidad |
+| `generador-arquitectura` | Genera blueprints de arquitectura: detecta stack, patrones, diagramas C4/UML, ADRs |
+| `generador-readme` | Genera READMEs completos desde `.github/copilot` y `copilot-instructions.md` |
 | `java-springboot` | Buenas prácticas Spring Boot: starters, estructura por dominio, configuración |
-| `javascript-typescript-jest` | Tests JS/TS con Jest: estructura, mocking, patrones comunes |
-| `nodejs-backend-patterns` | Backends Node producción con Express/Fastify: middleware, errores, auth, API REST/GraphQL |
-| `playwright-best-practices` | Playwright E2E/componentes/API/visual/a11y: POM, flaky tests, auth, CI/CD, mocks |
-| `readme-blueprint-generator` | Genera READMEs completos desde `.github/copilot` y `copilot-instructions.md` |
-| `redesign-existing-projects` | Eleva sitios/apps existentes a calidad premium sin romper funcionalidad |
-| `repo-intake-and-plan` | Intake Rigor: mapa rápido del repo y plan mínimo de reproducción (inference/eval/train) |
-| `security-and-hardening` | Endurece código contra OWASP Top 10: inputs, auth, sesiones, dependencias, GDPR/CCPA |
-| `spring-boot-testing` | Testing Spring Boot 4 con JUnit 6, AssertJ e Instancio |
-| `sql-optimization` | Optimización SQL universal (MySQL, PostgreSQL, SQL Server, Oracle): planes, índices, paginación |
+| `mejorar-diseno-existente` | Eleva sitios/apps existentes a calidad premium sin romper funcionalidad |
+| `optimizacion-sql` | Optimización SQL universal (MySQL, PostgreSQL, SQL Server, Oracle): planes, índices, paginación |
+| `patrones-backend-nodejs` | Backends Node producción con Express/Fastify: middleware, errores, auth, API REST/GraphQL |
+| `plan-pruebas-pymes` | Planes de prueba pragmáticos para pymes: alcance, casos con evidencia, incidencias y veredicto |
+| `pruebas-jest` | Tests JS/TS con Jest: estructura, mocking, patrones comunes |
+| `pruebas-springboot` | Testing Spring Boot 4 con JUnit 6, AssertJ e Instancio |
+| `seguridad-y-blindaje` | Endurece código contra OWASP Top 10: inputs, auth, sesiones, dependencias, GDPR/CCPA |
 | `tdd` | TDD red-green-refactor: tests de comportamiento por interfaces públicas |
 | `ui-ux-pro-max` | Inteligencia UI/UX: estilos, paletas, fuentes, guías UX, iconos, presets GSAP, stacks |
-| `verification-before-completion` | Verificación antes de declarar done: evidencia ejecutada antes de afirmar |
+| `verificacion-final` | Verificación antes de declarar done: evidencia ejecutada antes de afirmar |
 
 ## MCP (`opencode.json`)
 
@@ -86,4 +86,4 @@ Antes de cada push se verifica:
 Select-String -Recurse -Path skills,opencode.json -Pattern 'sk-[A-Za-z0-9]|ghp_|xoxb|AKIA|password\s*[:=]\s*[''"][^''"]+[''"]' | Select-Object Path,LineNumber,Line
 ```
 
-Estado actual: **limpio**. Los matches de `password|secret|token|api_key` en los skills son solo documentación genérica y ejemplos. El único email es `test@gmail.com` de ejemplo en `playwright-best-practices`.
+Estado actual: **limpio**. Los matches de `password|secret|token|api_key` en los skills son solo documentación genérica y ejemplos. El único email es `test@gmail.com` de ejemplo en `buenas-practicas-playwright`.
