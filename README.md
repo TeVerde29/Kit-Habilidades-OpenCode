@@ -6,17 +6,18 @@ Colección personal de **skills** para agentes de código + configuración de **
 
 ```
 kit-habilidades-opencode/
-  skills/          # 25 skills (cada una con su SKILL.md)
+  skills/          # 26 skills (cada una con su SKILL.md)
   opencode.json    # configuración MCP (5 servidores, sin secretos)
   README.md
   .gitignore
 ```
 
-## Skills (25)
+## Skills (26)
 
 | Skill | Qué hace |
 |---|---|
 | `analisis-repo-y-plan` | Intake Rigor: mapa rápido del repo y plan mínimo de reproducción (inference/eval/train) |
+| `auditoria-codigo` | Auditoría de código solo lectura: espagueti, estructura, seguridad e informe con archivo:línea |
 | `auditoria-sitio-web` | Audita un sitio con `squirrelscan` (SEO, performance, seguridad, a11y, 260+ reglas) y corrige en bucle |
 | `buenas-practicas-playwright` | Playwright E2E/componentes/API/visual/a11y: POM, flaky tests, auth, CI/CD, mocks |
 | `buscar-habilidades` | Descubre e instala skills del ecosistema abierto de agentes |
