@@ -6,13 +6,13 @@ Colección personal de **skills** para agentes de código + configuración de **
 
 ```
 kit-habilidades-opencode/
-  skills/          # 26 skills (cada una con su SKILL.md)
+  skills/          # 27 skills (cada una con su SKILL.md)
   opencode.json    # configuración MCP (5 servidores, sin secretos)
   README.md
   .gitignore
 ```
 
-## Skills (26)
+## Skills (27)
 
 | Skill | Qué hace |
 |---|---|
@@ -24,6 +24,7 @@ kit-habilidades-opencode/
 | `commit-rapido` | Commit rápido del día: mensaje terso en español + frenos mínimos |
 | `convertir-documentos-markdown` | Convierte Word, PowerPoint, Excel, PDF, EPUB, CSV a Markdown con `anydoc` |
 | `desarrollador-angular` | Código Angular y guía de arquitectura: señales, formularios, DI, routing, SSR, ARIA, testing, CLI |
+| `design-ricra` | Sistema de diseño Tea Green: tipografía, paleta, temas claro/oscuro, tokens CSS y contraste |
 | `despliegue-seguro` | Despliegue amplio: hooks pre-commit, validación, commit en español con contexto y push |
 | `diagnosticar-errores` | Diagnóstico de bugs difíciles y regresiones de rendimiento, con redacción de secretos |
 | `diseno-apple` | Diseño estilo Apple para web: motion físico, springs, sheets, materiales translúcidos, tipografía |
