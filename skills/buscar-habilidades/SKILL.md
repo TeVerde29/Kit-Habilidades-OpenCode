@@ -1,6 +1,6 @@
 ---
 name: buscar-habilidades
-description: Ayuda a descubrir e instalar skills de agentes cuando el usuario pregunta "cómo hago X", "busca una skill para X", "hay alguna skill que..." o quiere ampliar capacidades. Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. Úsala cuando el usuario busque funcionalidad que pueda existir como skill instalable.
+description: Ayuda a descubrir e instalar skills de agentes cuando el usuario pregunta "cómo hago X", "busca una skill para X", "hay alguna skill que..." o quiere ampliar capacidades. Úsala cuando el usuario busque funcionalidad que pueda existir como skill instalable.
 ---
 
 # Buscar habilidades
